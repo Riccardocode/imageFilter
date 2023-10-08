@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>Image Filter</title>
+  </head>
+  <body>
+    <h1 class="pageTitle">Filter your image</h1>
+
+    <div class="imgContainerWrapper">
+      <div class="baseContainer">
+        <div class="inputImg">
+          <label for="chooseImg">Choose your image</label>
+          <input type="file" id="chooseImg" />
+        </div>
+        <div class="originalImgContainer">
+          <h2>Original</h2>
+          <canvas class="placeholder generalImg" id="imagePreview"></canvas>
+        </div>
+      </div>
+
+      <div class="elaboratedImgContainer">
+        <div class="card BlackAndWhiteContainer generalCenteredCol">
+          <h2>Black & White</h2>
+          <canvas class="placeholder generalImg" id="bwCanvas"></canvas>
+          <a
+            class="hideButton"
+            id="downloadBW"
+            href="#"
+            download="black_white.png"
+            >Download Black & White Image</a
+          >
+        </div>
+
+        <div class="card cartoonContainer generalCenteredCol">
+          <h2>Cartoon</h2>
+          <canvas class="placeholder generalImg" id="cartoonCanvas"></canvas>
+          <a
+            class="hideButton"
+            id="downloadCartoon"
+            href="#"
+            download="cartoon.png"
+            >Download Cartoon Image</a
+          >
+        </div>
+
+        <div class="card AntiqueContaier generalCenteredCol">
+          <h2>Antique</h2>
+          <canvas class="placeholder generalImg" id="antiqueCanvas"></canvas>
+          <a
+            class="hideButton"
+            id="downloadAntique"
+            href="#"
+            download="antique.jpg"
+            >Download Antique Image</a
+          >
+        </div>
+
+        <div class="card invertedContainer generalCenteredCol">
+          <h2>Inverted</h2>
+          <canvas class="placeholder generalImg" id="invertedCanvas"></canvas>
+          <a
+            class="hideButton"
+            id="downloadInverted"
+            href="#"
+            download="inverted.png"
+            >Download Inverted Image</a
+          >
+        </div>
+        <!-- OilPaint takes too much computation rss -->
+        <!-- <div class="card invertedContainer generalCenteredCol">
+          <h2>Oil Painting</h2>
+          <canvas class="placeholder generalImg" id="oilPaintingCanvas"></canvas>
+
+          <a
+            class="hideButton"
+            id="downloadOilPainting"
+            href="#"
+            download="oilPainting.jpg"
+            >Download Oilpainted Image</a
+          >
+        </div> -->
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/index.js"></script>
+</html>
